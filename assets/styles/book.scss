@@ -1,0 +1,75 @@
+@use "var.scss" as *;
+@use "mixins.scss" as *;
+@include default;
+.headik{
+    margin: 48px auto;
+    // width: fit-content;
+    display: flex;
+    justify-content: center;
+    // gap: 20px;
+    .activepage{
+        border-bottom: 4px solid rgb(203, 180, 146);
+    }
+    a{
+        @include font16px;
+        // padding-bottom: 16px;
+        text-decoration: none;
+        padding:0px 24px 8px;
+        border-bottom: 1px solid $gray;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+main{
+    animation: myAnimation 0.5s ease-out; 
+    animation-iteration-count: 1;
+    div.cards{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 40px;
+        div{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid rgb(184, 194, 216);
+            gap: 8px;
+            // height: fit-content;
+            img{
+                cursor: pointer;
+                transition: 0.4s;
+                background-blend-mode: overlay;
+                &:hover{
+                    background-color: black;
+                    // background-blend-mode: overlay;
+                    opacity: 0.9;
+                }
+            }
+            h5{
+                margin-top: 16px;
+                cursor: pointer;
+                @include font16px(22px);
+                transition: 0.4s;
+                &:hover{
+                    color: gray;
+                }
+            }
+            h6{
+                @include font16px(16px,)
+            }
+            a{
+                text-decoration: none;
+                @include font16px(16px,white);
+                background-color: $primary-color;
+                padding: 8px;
+                margin-bottom: 24px;
+                transition: 0.4s;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+
+    }
+}

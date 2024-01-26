@@ -1,0 +1,211 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes myAnimation {
+  0% {
+    /* начальное состояние */
+    opacity: 0.1;
+  }
+  50% {
+    /* промежуточное состояние (если необходимо) */
+    opacity: 0.5;
+  }
+  100% {
+    /* конечное состояние */
+    opacity: 1;
+  }
+}
+header {
+  width: 100%;
+}
+header aside {
+  cursor: pointer;
+  position: fixed;
+  z-index: 12;
+  max-width: 180px;
+  width: 100%;
+  height: 54px;
+  text-align: center;
+  background-color: rgb(82, 114, 178);
+  left: 89%;
+  z-index: 6;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header aside img {
+  display: none;
+}
+header aside a {
+  font-family: "Open Sans";
+  color: white;
+  text-decoration: none;
+}
+header aside a:hover {
+  color: white;
+}
+header .resnav {
+  display: none;
+}
+header nav {
+  width: 100%;
+  height: 85px;
+  min-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  align-content: center;
+  background: linear-gradient(to top, #fff, rgb(233, 232, 232));
+  box-sizing: border-box;
+  gap: 40px;
+}
+header nav ol {
+  margin-bottom: 0;
+  height: 39px;
+  align-self: center;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 45px;
+  font-size: 16px;
+}
+header nav ol .mainh6 h6 {
+  cursor: pointer;
+  font-size: 16px;
+  align-self: center;
+  color: rgb(40, 59, 98);
+  font-family: Helvetica;
+  font-weight: normal;
+}
+header nav ol .weight {
+  font-weight: bold;
+}
+header nav ol .login {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-self: self-start;
+  align-items: flex-start;
+  font-size: 16px;
+}
+header nav ol .login a {
+  color: rgb(40, 59, 98);
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+header nav ol .login a:hover {
+  color: rgb(146, 159, 182);
+}
+header nav ul {
+  margin-bottom: 0;
+  display: flex;
+  gap: 85px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-family: "Open Sans";
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(49, 65, 99);
+  transition: 0.2s;
+}
+header nav ul li a:hover {
+  color: rgb(146, 159, 182);
+}
+header nav ul li .active {
+  color: rgb(168, 113, 10);
+}
+
+.headik {
+  margin: 48px auto;
+  display: flex;
+  justify-content: center;
+}
+.headik .activepage {
+  border-bottom: 4px solid rgb(203, 180, 146);
+}
+.headik a {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: light;
+  color: rgb(40, 59, 98);
+  text-decoration: none;
+  padding: 0px 24px 8px;
+  border-bottom: 1px solid rgb(160, 160, 159);
+}
+.headik a:hover {
+  color: rgb(40, 59, 98);
+}
+
+main {
+  animation: myAnimation 0.5s ease-out;
+  animation-iteration-count: 1;
+}
+main div.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 40px;
+}
+main div.cards div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(184, 194, 216);
+  gap: 8px;
+}
+main div.cards div img {
+  cursor: pointer;
+  transition: 0.4s;
+  background-blend-mode: overlay;
+}
+main div.cards div img:hover {
+  background-color: black;
+  opacity: 0.9;
+}
+main div.cards div h5 {
+  margin-top: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "Open Sans";
+  font-weight: light;
+  color: rgb(40, 59, 98);
+  transition: 0.4s;
+}
+main div.cards div h5:hover {
+  color: gray;
+}
+main div.cards div h6 {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: light;
+  color: rgb(40, 59, 98);
+}
+main div.cards div a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: light;
+  color: white;
+  background-color: rgb(40, 59, 98);
+  padding: 8px;
+  margin-bottom: 24px;
+  transition: 0.4s;
+}
+main div.cards div a:hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=book.css.map */

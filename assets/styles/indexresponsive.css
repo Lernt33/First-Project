@@ -1,0 +1,198 @@
+@media only screen and (max-width: 600px) {
+  #card2 {
+    max-width: 100%;
+    display: block;
+    position: static;
+    transform: translate(0, 0);
+  }
+  #card2 h2 {
+    text-align: start;
+  }
+  #card2 p {
+    text-align: start;
+  }
+  #carouselExampleControls {
+    height: 385px;
+  }
+  #carouselExampleControls img {
+    height: 385px;
+  }
+  #carouselExampleControls .callus {
+    width: 300px;
+    height: 45px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  #chatting {
+    left: 84%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+  }
+  #chatting img {
+    display: block;
+    cursor: pointer;
+  }
+  #chatting a {
+    display: none;
+  }
+  #cards-latest-properties {
+    margin-top: 96px;
+  }
+  #firstcard {
+    margin-top: 48px;
+    flex-direction: column;
+  }
+  #firstcard img {
+    align-self: center;
+  }
+  #firstcard h5 {
+    margin-bottom: 16px;
+  }
+  #secondcard {
+    flex-direction: column;
+    max-height: 644px;
+    height: 100%;
+    gap: 10px;
+  }
+  #secondcard img {
+    position: static;
+    transform: translate(0, -10%);
+    align-self: center;
+  }
+  #secondcard h5 {
+    margin-bottom: 16px;
+  }
+  #navigation {
+    display: none;
+  }
+  #lastcards {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #think {
+    flex-direction: column;
+    align-items: center;
+  }
+  #maincontainter {
+    flex-direction: column;
+    align-items: center;
+  }
+  #wholethink {
+    min-height: 651px;
+    height: 100%;
+  }
+  #wholethink .think {
+    margin-top: 30px;
+  }
+  #wholethink h3 {
+    padding-top: 60px;
+    width: 290px;
+    text-align: center;
+  }
+  #cardss {
+    flex-direction: column;
+    align-items: center;
+  }
+  #cardss article {
+    margin-bottom: 16px;
+  }
+  #card {
+    display: none;
+  }
+  #resnav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  #resnav label img {
+    transition: 1s all;
+  }
+  #resnav h6 {
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    color: rgb(40, 59, 98);
+    font-family: Helvetica;
+    font-weight: normal;
+  }
+  #resnav h6 .weight {
+    font-weight: bold;
+  }
+  #resnav label {
+    align-self: center;
+    height: 38px;
+    width: 22px;
+    transform: translate(0, -30%);
+    z-index: 11;
+  }
+  #resnav label .first-pic {
+    transform: translate(-50%);
+  }
+  #resnav label .second-pic {
+    transform: translate(-50%);
+    display: none;
+  }
+  #resnav input {
+    display: none;
+  }
+  #resnav input:checked ~ label #first-pic {
+    display: none;
+  }
+  #resnav input:checked ~ label #second-pic {
+    display: block;
+  }
+  #resnav input:checked ~ #navulres {
+    left: 0%;
+  }
+  ul {
+    left: -100%;
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(203, 180, 146);
+    transition: 1s all;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  ul li {
+    margin-left: 8px;
+  }
+  ul li .active {
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: light;
+    color: rgb(40, 59, 98);
+  }
+  ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: light;
+    color: white;
+  }
+  ul li:not(:first-child) {
+    width: 188px;
+    box-sizing: border-box;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+  }
+  ul li:not(:first-child) a {
+    margin-left: 8px;
+  }
+  ul .login {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  li {
+    list-style: none;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=indexresponsive.css.map */

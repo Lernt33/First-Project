@@ -1,0 +1,55 @@
+@use "var.scss" as *;
+@use "mixins.scss" as *;
+@include default;
+
+main{   
+    animation: myAnimation 0.5s ease-out; 
+    animation-iteration-count: 1;
+    background-color: rgb(30, 48, 84);     
+    h2{
+    @include font16px(28px,white,bold);
+    padding-top: 80px;
+    margin: auto;
+    width: fit-content;
+}
+    section{
+        margin-top: 80px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 80px;
+        .card{
+            // width: 292px;
+            // height: 492px;
+            background-color: transparent;
+            border: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-content: center;
+            margin-bottom: 72px;
+            h5{
+                @include font16px(20px,$light-primary,bolder);
+                margin-top: 24px;
+            }
+            h6{
+                @include font16px(16px,$orange,500);
+            }
+            a{
+                margin-top: 16px;
+                text-decoration: none;
+                @include font16px(16px,black,500);
+                text-align: center;
+                background-color: rgb(183, 193, 215);
+                width: 100%;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                transition: 0.5s ease;
+                &:hover{
+                    background-color: rgb(15, 24, 42);
+                    color: white;
+                }
+            }
+        }
+    }
+}

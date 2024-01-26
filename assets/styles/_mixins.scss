@@ -1,0 +1,168 @@
+@use "var" as *;
+
+
+@mixin responsiveheader{
+  
+}
+
+@mixin flex($jc: center, $ai: center, $gap: 0) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $gap;
+}
+@mixin font16px($px: 16px, $color: $primary-color, $bold: light){
+  font-size: $px;
+  font-family: $primary-font ; 
+  font-weight: $bold;
+  color: $color;
+}
+@mixin h2($margin: 14vw){
+  h2{
+    margin-top: $margin;
+    font-size: 28px;
+    font-family: $primary-font;
+    text-align: center;
+    font-weight: 1000;
+    color: $primary-color;
+}
+}
+
+@mixin default(){
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  @keyframes myAnimation {
+    0% {
+      /* начальное состояние */
+      opacity: 0.1;
+    }
+    50% {
+      /* промежуточное состояние (если необходимо) */
+      opacity: 0.5;
+    }
+    100% {
+      /* конечное состояние */
+      opacity: 1;
+    }
+  }
+header{
+  width: 100%;
+  aside{
+    img{
+      display: none;
+    }
+    cursor: pointer;
+    position: fixed;
+    z-index: 12;
+    max-width: 180px;
+    width: 100%;
+    height: 54px;
+    text-align: center;
+    background-color: rgb(82, 114, 178);
+    a{
+      font-family: $primary-font;
+      color: white;
+      text-decoration: none;
+      &:hover{
+        color: white;
+      }
+    }
+    left: 89%;
+    z-index: 6;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    // height: 85px;
+    .resnav{
+      display: none;
+    }
+    nav{
+        width: 100%;
+        height: 85px;
+        min-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        align-content: center;
+        background: linear-gradient(to top, #fff, rgb(233, 232, 232));
+        box-sizing: border-box;
+        gap: 40px;
+        ol{
+            margin-bottom: 0;
+            // margin-right: 25vw;
+            height: 39px;
+            // background-color: red;
+            align-self: center;
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 45px;
+            font-size: 16px;
+            .mainh6 h6{
+                cursor: pointer;
+                font-size: 16px;
+                align-self: center;
+                color: $primary-color;
+                    font-family: $secondary-font;
+                    font-weight: normal;
+                }
+                .weight{
+                    font-weight: bold;
+                }
+            .login{
+                cursor: pointer;
+                // background-color: orange;
+                // height: 100%;
+                display: flex;
+                gap: 8px;
+                align-self: self-start;
+                align-items: flex-start;
+                font-size: 16px;
+                
+                a{
+                    color: $primary-color;
+                    font-family: $primary-font;
+                    font-size: 16px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                      color:rgb(146, 159, 182);
+                    }
+                }
+            }
+        }
+        ul{
+            // margin-right: 25vw;
+            margin-bottom: 0;
+            display: flex;
+            gap: 85px;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            li{
+                display: inline-block;
+                list-style: none;
+                font-family: $primary-font;
+                a{
+                    text-decoration: none;
+                    color: rgb(49, 65, 99);
+                    transition: 0.2s;
+                    &:hover{
+                      color:rgb(146, 159, 182);
+                    }
+                }
+              .active{
+                  color: rgb(168, 113, 10);
+              }   
+
+            }
+
+        }
+    }
+}
+}

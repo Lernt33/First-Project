@@ -1,0 +1,385 @@
+@use "var.scss" as *;
+@use "mixins.scss" as *;
+@include default;
+
+main{
+    .card2{
+        display: none;
+    }
+    animation: myAnimation 0.5s ease-out; 
+    animation-iteration-count: 1;
+    .examples{
+        margin-top: -88px;
+        .firstcard
+        {
+            margin-top: 88px;
+            position: relative;
+            display: flex;
+            background-color: rgb(30, 48, 84);
+            min-height: 430px;
+            width: 100%;
+            justify-content: center;
+            gap: 45px;
+            align-items: center;
+            img{
+                max-width: 292px ;
+            
+                height: 349px;
+                // position: absolute;
+                right: 45%;
+                top: -1%;
+                z-index: 6;
+                align-self: flex-start;
+                transform: translate(-0%,-10%);
+            }
+            .restels{
+            // margin-left: 160px;
+            max-width: 327px;
+            width: 100%;
+            display: flex;
+            transform: translate(0,-10%);
+            // align-items: center;
+            flex-direction: column;
+            h4{
+                @include font16px(18px,white,1000)
+            }
+            h6{
+                margin-top: 8px;
+                @include font16px(16px,$orange,100)
+            }
+            p{
+                margin-top: 4px;
+                @include font16px(16px,gray);
+            }
+            h5{
+                @include font16px(18px,$light-primary,bolder)
+            }
+        }
+        }
+        .secondcard
+        {
+            position: relative;
+            display: flex;
+            background-color: rgb(41, 59, 95);
+            max-height: 430px;
+            width: 100%;
+            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 45px;
+            align-items: center;
+            img{
+                max-width: 294px;
+                width: 100%;
+                height: 349px;
+                // position: absolute;
+                right: 45%;
+                top: -1%;
+                z-index: 6;
+                align-self: flex-end;
+                // transform: translate(-0%,-10%);
+            }
+            .restels{
+            // margin-left: 160px;
+            max-width: 327px;
+            width: 100%;
+            display: flex;
+            // align-items: center;
+            flex-direction: column;}
+            h4{
+                @include font16px(18px,white,1000)
+            }
+            h6{
+                margin-top: 8px;
+                @include font16px(16px,$orange,100)
+            }
+            p{
+                margin-top: 4px;
+                @include font16px(16px,gray);
+            }
+            h5{
+                @include font16px(18px,$light-primary,bolder)
+            }
+        }
+    }
+    .alles{
+        // background-color: aqua;
+    @include h2;
+        .cardss{
+            margin-top: 28px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        article{
+            width: 308px;
+            h4{
+                margin-top: 16px;
+                font-size: 18px;
+                font-family: $primary-font;
+                color: $light-primary;
+                font-weight: bold;
+            }
+            h5{
+                margin-top: 8px;
+                font-size: 18px;
+                font-weight: light;
+                font-family: $primary-font;
+                color: $light-primary;
+                margin-bottom: 16px;
+            }
+            h6{
+                color: $orange;
+                font-size: 16px;
+                // font-weight: light;
+                font-family: $primary-font;
+            }
+            p{
+                padding-top: 16px;
+                color: $gray;
+                font-size: 16px;
+                // font-weight: light;
+                font-family: $primary-font;
+                padding-bottom: 32px;
+            }
+            a{
+                font-family: $primary-font;
+                font-size: 13px;
+                border: 2px solid $light-primary;
+                padding: 8px 36px 8px 36px;
+                text-decoration: none;
+                color: $light-primary;
+                transition: 0.4s;
+                &:hover{
+                    color: $gray;
+                    border: 2px solid $gray;
+                }
+            }
+        }
+    }
+}
+    section{
+        .father{
+            position: relative;}
+            .callus{
+                position: absolute;
+                max-width: 227px;
+                width: 100%;
+                height: 58px;
+                background-color: rgba(40, 59, 98,0.85);
+                z-index: 5;
+                left: 63%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                p{
+                    margin-top: 16px;
+                    color:white;
+                    font-family: $primary-font;
+                    font-size: 14px;
+                }
+            }
+                
+            }
+        aside{
+            position: absolute;  
+            left: 35%;
+            top:70%;
+            transform: translate(-50%,-50%);  
+            max-width: 347px;
+            width: 100%;
+                height: 500px;
+                background-color: rgba(40, 59, 98,0.85);
+                text-align: center;
+                a.ALLSALES{
+                    color: white;
+                    text-decoration: none;
+                    padding: 8px 56px 8px 56px;
+                    border: 1px solid white;
+                    font-family: $primary-font;
+                    font-size: 14px;
+                    transition: 0.15s;
+                    right: 50%;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                h2:nth-child(1){
+                    padding-top: 48px;
+                    font-size: 28px;
+                    color: white;
+                    font: $primary-font;
+                    margin: 0 auto;
+                    max-width: 300px;
+                    box-sizing: content-box;
+                    font-weight: 600;
+                    line-height: 40px;
+                }
+                h2:nth-child(4){
+                    font-size: 28px;
+                    color: white;
+                    font: $primary-font;
+                    margin: 0 auto;
+                    width: fit-content;
+                    box-sizing: content-box;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                    
+                }
+                p{
+                    font-family: $primary-font;
+                    max-width: 300px;
+                    color: white;
+                    margin: 16px auto;
+                    font-size: 16px;
+                }
+                div{
+                    height: 1px;
+                    max-width: 300px;
+                    background-color: white;
+                    margin: 16px auto;
+                }
+            }
+        
+        }
+footer{
+    @include h2(100px);
+    h2{
+        margin-bottom: 80px;
+    }
+    .lastcon{
+        .lastcards{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: center;
+            gap: 80px;
+            .please{
+                // background-color: aliceblue;
+                h5{
+                    @include font16px(18px,$primary-color,bold)
+                }
+                p{
+                    a{
+                        text-decoration: none;
+                        cursor: pointer !important;
+                        color: $gray;
+                    }
+                }
+            }
+            .form{
+                
+                h5{
+                    @include font16px(18px,$primary-color,1000);
+                    max-width: 270px;
+                    margin-bottom: 40px;
+                 }
+                 form{
+
+                    display: flex;
+                    flex-direction: column;
+                    button{
+                        background-color: $primary-color;
+                        @include font16px(16px,white,500);
+                        padding: 2px 24px 2px 24px;
+                        width: fit-content;
+                        align-self: flex-end;
+                        
+                    }
+                    #message{
+                        // height: 129px;
+                        padding-bottom: 121px;
+                        &::placeholder{
+                            text-align: start;
+                            vertical-align: bottom;
+                        }}
+                    input{
+                        max-width: 322px;
+                        margin-bottom: 8px;
+                        border: 1px solid $gray;
+                        transition: 0.2s;
+                        &::placeholder{
+                            padding-left: 8px;
+                            @include font16px(14px,$gray);
+                        }
+                        &:hover,&:focus{
+                            background-color: rgba(160, 160, 159,0.3);;
+                        }
+                    
+                    
+                    }
+
+                 }
+            }
+            .fulladress
+                h5{
+                   @include font16px(18px,$primary-color,1000);
+                   margin-bottom: 40px;
+                }
+                p{
+                    @include font16px(16px,$gray)
+                }
+                iframe{
+                    max-width: 490px;
+                    width: 100%;
+                    height: 210px;
+        }
+    }
+}
+    .wholethink{
+        height: 500px;
+        width: 100%;
+        background-color: rgba(40, 59, 98,0.6);
+        background-blend-mode: overlay;
+        background-image: url(../images/background.webp);
+        
+        background-size: 1500px;
+        h3{
+            width: fit-content;
+            margin: auto;
+            padding-top: 120px;
+            @include font16px(28px,white,1000)
+        }
+    }
+    .think{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        div{
+            max-width: 300px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                padding-top: 24px;
+                text-align: center;
+                @include font16px(14px,white)
+            }
+            h6{
+                @include font16px(16px,$orange,1000)
+            }
+        }
+    }
+    .maincontainter{
+        display: flex;
+        justify-content: center;
+        // gap: 40px
+    div{
+        padding: 0 16px 0 16px;
+        max-width: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h6{
+            @include font16px(18px,$primary-color,bold);
+            margin-top: 24px;
+            margin-bottom:12px;
+        }
+        p{
+            text-align: center;
+            color: $gray;
+            margin-bottom: 6vi;
+        }
+    }
+    }
+}
