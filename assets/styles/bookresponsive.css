@@ -1,0 +1,116 @@
+@media only screen and (max-width: 600px) {
+  #cards {
+    grid-template-columns: auto;
+  }
+  #chatting {
+    left: 84%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+  }
+  #chatting img {
+    display: block;
+    cursor: pointer;
+  }
+  #chatting a {
+    display: none;
+  }
+  #navigation {
+    display: none;
+  }
+  #resnav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  #resnav label img {
+    transition: 1s all;
+  }
+  #resnav h6 {
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    color: rgb(40, 59, 98);
+    font-family: Helvetica;
+    font-weight: normal;
+  }
+  #resnav h6 .weight {
+    font-weight: bold;
+  }
+  #resnav label {
+    align-self: center;
+    height: 38px;
+    width: 22px;
+    transform: translate(0, -30%);
+    z-index: 11;
+  }
+  #resnav label .first-pic {
+    transform: translate(-50%);
+  }
+  #resnav label .second-pic {
+    transform: translate(-50%);
+    display: none;
+  }
+  #resnav input {
+    display: none;
+  }
+  #resnav input:checked ~ label #first-pic {
+    display: none;
+  }
+  #resnav input:checked ~ label #second-pic {
+    display: block;
+  }
+  #resnav input:checked ~ #navulres {
+    left: 0%;
+  }
+  ul {
+    left: -100%;
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(203, 180, 146);
+    transition: 1s all;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  ul li {
+    margin-left: 8px;
+  }
+  ul li .active {
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: light;
+    color: rgb(40, 59, 98);
+  }
+  ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Open Sans";
+    font-weight: light;
+    color: white;
+  }
+  ul li:not(:first-child) {
+    width: 188px;
+    box-sizing: border-box;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+  }
+  ul li:not(:first-child) a {
+    margin-left: 8px;
+  }
+  ul .login {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  li {
+    list-style: none;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=bookresponsive.css.map */
